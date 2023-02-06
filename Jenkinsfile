@@ -1,6 +1,8 @@
 @Library('robot-shared-library') _
 
-maven("shipping")
+env.COMPONENT="shipping"
+env.APP="maven"
+maven()
 
 
 
