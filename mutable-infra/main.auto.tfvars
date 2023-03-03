@@ -1,5 +1,5 @@
 COMPONENT   = "shipping"
-APP_PORT    = 8080
+APP_PORT    = 80
 
 
 
