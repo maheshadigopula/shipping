@@ -35,6 +35,22 @@ data:
 # Ingress Resource
 
 --- 
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: shipping-svc
+spec:
+  # type: LoadBalancer
+  selector:
+    app: cart
+  ports:
+    - protocol: TCP
+      port: 8080              # Port number of the service that it has to listen on 
+      targetPort: 8080        # Port number of the container that it has to forward to
+
+--- 
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
