@@ -31,7 +31,7 @@ metadata:
   name: shipping-configmap 
 data:
      CART_ENDPOINT: "cart-svc"
-     DB_HOST: "mysql-dev.roboshop.internal"
+     DB_HOST: roboshop-dev-mysql.c93whrwsdihk.us-east-1.rds.amazonaws.com
 # Ingress Resource
 
 --- 
