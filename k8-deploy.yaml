@@ -35,8 +35,6 @@ data:
 # Ingress Resource
 
 --- 
-
-
 apiVersion: v1
 kind: Service
 metadata:
