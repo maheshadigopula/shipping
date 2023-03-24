@@ -1,5 +1,5 @@
 FROM       openjdk:11  
 RUN        mkdir /app 
 WORKDIR    /app 
-COPY       shipping.jar  /app/shippng.jar
+COPY       target/shipping-1.0.jar  /app/shipping.jar
 ENTRYPOINT [ "java" , "-jar" , "shipping.jar" ]
