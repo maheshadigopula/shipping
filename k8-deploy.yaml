@@ -30,8 +30,8 @@ kind: ConfigMap
 metadata:
   name: shipping-configmap 
 data:
-     CART_ENDPOINT: cart-svc 
-     DB_HOST: mysql-dev.roboshop.internal
+     CART_ENDPOINT: "cart-svc"
+     DB_HOST: "mysql-dev.roboshop.internal"
 # Ingress Resource
 
 --- 
