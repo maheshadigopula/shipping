@@ -1,5 +1,5 @@
-FROM       maven 
-COPY       src src    
-COPY       pom.xml pom.xml  
-RUN        mvn package && mv target/shipping-1.0.jar shipping.jar 
+FROM       openjdk:11  
+RUN        mkdir /app 
+WORKDIR    /app 
+COPY       shipping.jar  /app/shippng.jar
 ENTRYPOINT [ "java" , "-jar" , "shipping.jar" ]
